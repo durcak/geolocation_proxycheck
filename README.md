@@ -53,18 +53,18 @@ $ ./geolocation_service.rb -ul
 $ ./geolocation_service.rb -up
 ```
 
-- Geolocate IP adresses stored in CSV file by free MaxMind GeoIP database:
+- Geolocate IP adresses stored in CSV file by free MaxMind GeoLite2 City Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -m
 ```
 
 
-- Geolocate IP adresses stored in CSV file by free IP2Location IP2Lite database:
+- Geolocate IP adresses stored in CSV file by free IP2Location LITE IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -l
 ```
 
-- Check IP adresses on proxy by free IP2Location IP2Proxy database:
+- Check IP adresses on proxy by free IP2Location IP2Proxy LITE IP-COUNTRY Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -p
 ```
