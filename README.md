@@ -8,7 +8,7 @@ Input CSV file must have header with "ip" column. Output file contains:
 - Proxy Type
 
 ## Installation 
-Run inside project from your command line:
+Ruby and Bundler installation is required. After that run inside project from your command line:
 ```ruby
 $ bundle install
 ```
