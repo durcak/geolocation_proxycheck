@@ -1,5 +1,5 @@
 # geolocation_proxycheck
-The geolocation_proxycheck script is used to geolocate IP adresses from CSV file by two databases the MaxMind GeoIP and the IP2Location IP2Lite. Script can be also used to check IP adresses on proxy by the IP2Location IP2Proxy database. 
+The geolocation_proxycheck script is used to geolocate IP addresses from CSV file by two databases the MaxMind GeoIP and the IP2Location IP2Lite. Script can be also used to check IP addresses on proxy by the IP2Location IP2Proxy database. 
 Input CSV file must have header with "ip" column. Output file contains: 
 
 - Country Code 
@@ -27,7 +27,7 @@ $ ./geolocation_service.rb -h
     -up, --updatep     Update proxy database.
     -ul, --updateip2   Update IP2Location database.
     -um, --updatemm    Update MaxMind database.
-    -i, --input        Add name of inputfile with data.
+    -i, --input        Add name of input file with data.
     -m, --maxmind      Geolocate by MaxMind.
     -l, --ip2location  Geolocate by IP2Location.
     -p, --proxy        Check proxy.
@@ -54,29 +54,29 @@ $ ./geolocation_service.rb -ul
 $ ./geolocation_service.rb -up
 ```
 
-- Geolocate IP adresses stored in CSV file by free MaxMind GeoLite2 City Database:
+- Geolocate IP addresses stored in CSV file by free MaxMind GeoLite2 City Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -m
 ```
 
 
-- Geolocate IP adresses stored in CSV file by free IP2Location LITE IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE Database:
+- Geolocate IP addresses stored in CSV file by free IP2Location LITE IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -l
 ```
 
-- Check IP adresses on proxy by free IP2Location IP2Proxy LITE IP-COUNTRY Database:
+- Check IP addresses to proxy by free IP2Location IP2Proxy LITE IP-COUNTRY Database:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -p
 ```
 
-- Visualise output data on map:
+- Visualise output data on the map:
 ```ruby
 $ ./geolocation_service.rb -i example.csv -v
 ```
 
 ## Used databases:
-This aplicaton includes:
+This applicaton includes:
 
 - IP2Location LITE data available from <a href="http://lite.ip2location.com">http://lite.ip2location.com</a>.
 - GeoLite2 data created by MaxMind, available from <a href="http://www.maxmind.com">http://www.maxmind.com</a>.
