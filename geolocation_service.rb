@@ -21,6 +21,7 @@ module Geolocation_service
     o.bool '-m',   '--maxmind',     'Geolocate by MaxMind.'
     o.bool '-l',   '--ip2location', 'Geolocate by IP2Location.'
     o.bool '-p',   '--proxy',       'Check proxy.'
+    o.bool '-v',   '--visualize',   'Create a visualization map.'
   end
 
   # Downlaod or update GeoIP and proxy databases.
@@ -55,17 +56,17 @@ module Geolocation_service
   if opts[:i]
     if opts[:m] or opts[:l] or opts[:p]
       puts "--> Proces started..."
-      GeolocationHelper.new(opts[:i], opts[:m], opts[:l], opts[:p]).processData
+      GeolocationHelper.new(opts[:i], opts[:m], opts[:l], opts[:p], opts[:v]).processData
       puts '--> Geolocation successfully finished.'
     else
       puts "--> No option selected!"
       puts "--> Starting default geolocation with MaxMind and IP2Location without Proxy..."
-      GeolocationHelper.new(opts[:i], true, true, false).processData
+      GeolocationHelper.new(opts[:i], true, true, false, opts[:v]).processData
       puts '--> Geolocation successfully finished.'
     end
   end
 
-  if (opts[:m] or opts[:l] or opts[:p]) and opts[:i] == nil
+  if (opts[:m] or opts[:l] or opts[:p] or opts[:v]) and opts[:i] == nil
     puts 'Missing input file!'
   end
 

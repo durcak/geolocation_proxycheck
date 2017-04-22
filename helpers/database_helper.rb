@@ -7,8 +7,8 @@ require 'rubygems'
 # DatabaseHelper module download databases from Internet
 module DatabaseHelper
   MAXMIND_URL = "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz"
-  IP2PROXY_URL = uri = "https://www.ip2location.com/download?productcode=PX2LITEBIN&login=geolocation@europe.com&password=KzSfbeZjpp9Q"
-  IP2LOCATION_URL = uri = "https://www.ip2location.com/download?productcode=DB5LITEBIN&login=geolocation@europe.com&password=KzSfbeZjpp9Q"
+  IP2PROXY_URL = "https://www.ip2location.com/download?productcode=PX2LITEBIN&login=geolocation@europe.com&password=KzSfbeZjpp9Q"
+  IP2LOCATION_URL = "https://www.ip2location.com/download?productcode=DB5LITEBIN&login=geolocation@europe.com&password=KzSfbeZjpp9Q"
   
   class << self
     def getAllDatabases
