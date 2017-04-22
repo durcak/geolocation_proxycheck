@@ -31,6 +31,7 @@ $ ./geolocation_service.rb -h
     -m, --maxmind      Geolocate by MaxMind.
     -l, --ip2location  Geolocate by IP2Location.
     -p, --proxy        Check proxy.
+    -v, --visualize    Create a visualisation map.
 ```
 
 - Update all databases:
@@ -68,6 +69,12 @@ $ ./geolocation_service.rb -i example.csv -l
 ```ruby
 $ ./geolocation_service.rb -i example.csv -p
 ```
+
+- Visualise output data on map:
+```ruby
+$ ./geolocation_service.rb -i example.csv -v
+```
+
 ## Used databases:
 This aplicaton includes:
 
