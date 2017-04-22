@@ -21,7 +21,7 @@ module Geolocation_service
     o.bool '-m',   '--maxmind',     'Geolocate by MaxMind.'
     o.bool '-l',   '--ip2location', 'Geolocate by IP2Location.'
     o.bool '-p',   '--proxy',       'Check proxy.'
-    o.bool '-v',   '--visualize',   'Create a visualization map.'
+    o.bool '-v',   '--visualise',   'Create a visualisation map.'
   end
 
   # Downlaod or update GeoIP and proxy databases.
