@@ -31,7 +31,7 @@ $ ./geolocation_service.rb -h
     -m, --maxmind      Geolocate by MaxMind.
     -l, --ip2location  Geolocate by IP2Location.
     -p, --proxy        Check proxy.
-    -v, --visualize    Create a visualisation map.
+    -v, --visualise    Create a visualisation map.
 ```
 
 - Update all databases:
