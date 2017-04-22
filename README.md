@@ -76,7 +76,7 @@ $ ./geolocation_service.rb -i example.csv -v
 ```
 
 ## Used databases:
-This applicaton includes:
+This application includes:
 
 - IP2Location LITE data available from <a href="http://lite.ip2location.com">http://lite.ip2location.com</a>.
 - GeoLite2 data created by MaxMind, available from <a href="http://www.maxmind.com">http://www.maxmind.com</a>.
